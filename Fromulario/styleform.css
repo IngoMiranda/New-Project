@@ -141,5 +141,19 @@ input:focus{
 }
 
 @media only screen and (min-width: 900px){
-  
+    .containe{
+        display: flex;
+        align-items: center;
+        background-color: black;
+    }
+
+    .img-containe{
+
+        width: 50%;
+    }
+
+    .form-containe{
+        width: 50%;
+    }
+
 }
