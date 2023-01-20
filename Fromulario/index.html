@@ -16,16 +16,16 @@
         </div>
         <div class="form-containe">
             <h1>Cadastre-se</h1>
-            <form action="#">
+            <form action="#" method="post" id="form">
                 <div class="form">
                     <label for="name"> Nome:</label>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="name" id="name" required>
     
                     <label for="lastname">Sobre nome:</label>
                     <input type="text" name="lastname" id="lastname">
     
                     <label for="tel">Telefone:</label>
-                    <input type="tel" name="tel" id="tel" placeholder="(xx) xxxx-xxxx">
+                    <input type="tel" name="tel" id="tel" placeholder="(xx) xxxx-xxxx" required>
     
                     <label for="email">E-mail:</label>
                     <input type="email" name="email" id="email" placeholder="nome@">
@@ -36,12 +36,12 @@
 
                     
                     <label for="password">Senha:</label>
-                    <input  class="password1" type="password" name="passaword" id="passowrd" placeholder="digite a sua senha">
+                    <input  class="password1" type="password" name="passaword" id="passowrd" placeholder="digite a sua senha" required>
                   
                     
                     
                     <label for="newpassword">Confirme a sua senha:</label>
-                    <input  class="password1" type="password" name="newpassword" id="newpassword" placeholder="digite novamente a sua senha">
+                    <input  class="password1" type="password" name="newpassword" id="newpassword" placeholder="digite novamente a sua senha" required>
                   
 
 
