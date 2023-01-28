@@ -30,6 +30,8 @@ body *{
     --strok-color: rgba(255, 255, 255, 0.5);
     --surface-color-hover: rgba(255, 255, 255, 0.05);
     --highlight-color:rgba(255, 255, 255, 0.2);
+    --background-button: url(./assets/mon-stars.svg);
+    --background-color: white;
 
 }
 
@@ -40,7 +42,7 @@ body *{
     --strok-color: rgba(0, 0, 0, 0.5);
     --surface-color-hover:rgba(0, 0, 0, 0.02);
     --highlight-color: rgba(0, 0, 0, 0.1);
-    
+    --background-button: url(./assets/sun.svg);
 }
 
 #container{
@@ -83,7 +85,7 @@ body *{
 
 }
 #switch button{
-    background: var(--text--color) url(./assets/mon-stars.svg) no-repeat center;
+    background: var(--background-color) var(--background-button) no-repeat center;
     border: none;
     height: 32px;
     width: 32px;
@@ -91,7 +93,7 @@ body *{
 
     position: absolute;
 
-    right: 0;
+    left: 0;
     z-index: 1;
     top: 50%;
     transform: translateY(-50%);
@@ -110,6 +112,12 @@ body *{
     -webkit-backdrop-filter: blur(4px);
 
       
+}
+
+.light #switch button{
+
+    right: 0;
+    left: initial;
 }
 
 /*Links*/
