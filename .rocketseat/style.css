@@ -128,12 +128,12 @@ body *{
 
 ul{
     width: 100%;
-    max-width: 500px;
-   list-style:none;
-   display: flex;
-   flex-direction:column;
-   margin-top: 24px;
-   gap: 1rem;
+    max-width: 400px;
+    list-style:none;
+    display: flex;
+    flex-direction:column;
+    margin-top: 24px;
+    gap: 1rem;
 
 
 }
@@ -192,4 +192,17 @@ footer{
     padding: 24px 0;
     text-decoration: none;
     font-size: 12pt;
+}
+
+/*Media queries*/
+
+@media (min-width:700px){
+
+    :root{
+        --background: url(./assets/max-Dark-mode.jpg);
+    }
+    .light{
+
+        --background: url(./assets/max-Light-mode.jpg);
+    }
 }
