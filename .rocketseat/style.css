@@ -12,6 +12,9 @@ body{
     /*backgound: color image repeat position/ size */
 
     background: var(--background) no-repeat top center/cover;
+    height: 100vh;
+    overflow: hidden;
+    
 
 }
 
