@@ -91,6 +91,7 @@ body *{
     position: relative;
 
 }
+
 #switch button{
     background: var(--background-color) var(--background-button) no-repeat center;
     border: none;
@@ -104,6 +105,8 @@ body *{
     z-index: 1;
     top: 50%;
     transform: translateY(-50%);
+
+    animation: slide-out .4s;
 
    
 }
@@ -123,10 +126,15 @@ body *{
 
 .light #switch button{
 
-    right: 0;
-    left: initial;
+    animation: slide-in .4s forwards;
+    
 }
 
+#switch button:hover{
+    
+    outline: 8px solid var(--surface-color);
+   
+}
 /*Links*/
 
 ul{
@@ -208,4 +216,28 @@ footer{
 
         --background: url(./assets/max-Light-mode.jpg);
     }
+}
+
+/*Animation*/
+
+@keyframes slide-in{
+
+    from{
+        left: 0;
+    }
+    to{
+        left: 50%;
+    }
+
+}
+
+@keyframes slide-out{
+
+    from{
+        left: 50%;
+    }
+    to{
+        left: 0;
+    }
+
 }
